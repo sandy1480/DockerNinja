@@ -7,7 +7,7 @@ app.get('/', function (req, res) {
     //set up the connection information
     var config = {
         userName: 'sa',
-        password: 'Password', // update me
+        password: 'S@ndy1480', // update me
         server: 'localhost',
         options: {
             database: 'DemoData'
