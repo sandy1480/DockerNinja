@@ -1,0 +1,13 @@
+{
+  "name": "employee-app",
+  "version": "1.0.1",
+  "description": "Node.js with SQL Server on Docker demo application",
+  "author": "Sandeep Vashistha (sandy1480@DevOps.com)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
