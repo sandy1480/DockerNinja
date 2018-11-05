@@ -13,7 +13,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = docker.build("employee-app:${env.BUILD_ID}")
+        app = docker.build("sandy1480/docker-test:${env.BUILD_ID}")
     }
 
     stage('*** Test Image ***') {
