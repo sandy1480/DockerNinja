@@ -2,6 +2,7 @@ node {
     def app
     environment {
         registry = "sandy1480/docker-test"
+        registryCredential = "dockerhub"
     }
     stage('*** Clone Repository ***') {
         /* Let's make sure we have the repository cloned to our workspace */
@@ -34,4 +35,8 @@ node {
             app.push()
         }
     }
+    
+    stage ('*** Remove Unused Docker Image***'){
+        sh "docker rmi $registry:$BUILD_NUMBER"
+      }
 }
